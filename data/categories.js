@@ -3,7 +3,8 @@ const {
 } = require('uuid');
 
 const categories = {
-    "data": [{
+    "data": [
+        {
             id: uuid(),
             category: "National Parks"
         },
