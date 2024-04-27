@@ -9,5 +9,8 @@ const verifyUser = (req,res,next)=>{
             next()
         })
     }
+     else {
+        res.status(401).json({message:"Unauthorized request"})
+    }
 }
 module.exports = verifyUser;

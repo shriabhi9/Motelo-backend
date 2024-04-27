@@ -40,7 +40,9 @@ router.route("/login").post(async(req,res)=>{
 
         res.json(...rest,accessToken);
     } catch (error) {
-        console.log(error);
+        res.status(404).json({
+            message:"Something wrong page not " 
+        })
     }
 })
 
