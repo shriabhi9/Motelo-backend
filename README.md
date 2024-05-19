@@ -1,4 +1,2 @@
-# Hotel-Lo
+# motelo
 back-end
-# hotello-backend
-# hotello-backend
