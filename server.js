@@ -33,6 +33,6 @@ app.use("/api/wishlist",wishlistRouter)
 mongoose.connection.once("open",()=>{
     console.log("Conneted to the database");
     app.listen(process.env.PORT || PORT ,()=>{
-        console.log("Server is running")
+        console.log("Server is running on port 3500")
     })
 })

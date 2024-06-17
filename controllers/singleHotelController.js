@@ -2,8 +2,8 @@ const Hotel = require("../models/hotel.model");
 
 const singleHotelHandler =  async (req,res)=>{
     try {
-        const {id} = req.params;
-        const hotel = await Hotel.findById(id);
+        const {_id} = req.params;
+        const hotel = await Hotel.findById(_id);
         res.json(hotel)
         
     } catch (error) {
