@@ -6,7 +6,7 @@ const getAllHotelHandler = async (req,res)=>{
     try {
         let hotels;
         if(hotelCategory){
-            hotels = await Hotel.find({category:hotelCategory});
+            hotels = await Hotel.find({category : hotelCategory});
         }
         else{
             hotels = await Hotel.find({});
