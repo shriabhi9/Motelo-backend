@@ -15,7 +15,7 @@ const connectDB = require("./config/dbconfig");
 const PORT = 3500;
 
 app.use(cors());
-app.use(express.json());
+app.use(express.json());    
 connectDB();
 
 app.get("/",(req,res)=>{
